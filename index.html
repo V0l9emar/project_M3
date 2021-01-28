@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конвертер валют</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="mask">
+    <div class="mask__loader">Loading</div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <div class="header__logo">
+          <img src="./images/logo.svg" class="header__logo--img" alt="logo" />
+        </div>
+        <ul class="header__menu--list menu-list">
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item--link">БАНК</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item--link">БИЗНЕС</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item--link">ИНВЕСТИЦИИ</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item--link">СТРАХОВАНИЕ</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item--link">МОБАЙЛ</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item--link">ПУТЕШЕСТВИЯ</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item--link">РАЗВЛЕЧЕНИЯ</a>
+          </li>
+        </ul>
+        <div class="header__login">
+          <a href="#" class="header__login--btn">Войти</a></div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="converter">
+        <h1 class="converter__title">Конвертер валют онлайн</h1>
+        <div class="converter__body">
+          <div class="converter__body--item item item-left">
+            <span class="item__title">У меня есть</span>
+            <div class="item__switcher">
+              <div class="item__switcher--box switcher-box-1  box-active">RUB</div>
+              <div class="item__switcher--box switcher-box-1">USD</div>
+              <div class="item__switcher--box switcher-box-1">EUR</div>
+              <div class="item__switcher--box switcher-box-1">GBP</div>
+              <select class="box-select__select item__switcher--box">
+                <option class="box-select__select--option" value="BYR">BYR</option>
+              </select>
+            </div>
+            <div class="item__input--box">
+              <input type="text" class="item__input--input input1" value="1">
+              <span class="item__input--rate rate-1">innerHtml 1 RUB = 0.0135 USD</span>
+            </div>
+          </div>
+          <div class="converter__body--item center">
+            <img src="./images/arrow-centersvg.svg" class="center-arrow" alt="ARROW_CENTER">
+          </div>
+          <div class="converter__body--item item item-right">
+            <span class="item__title">Хочу приобрести</span>
+            <div class="item__switcher">
+              <div class="item__switcher--box2 switcher-box-2">RUB</div>
+              <div class="item__switcher--box2 switcher-box-2  box-active">USD</div>
+              <div class="item__switcher--box2 switcher-box-2">EUR</div>
+              <div class="item__switcher--box2 switcher-box-2">GBP</div>
+              <select class="box-select__select item__switcher--box2 select2">
+                <option class="box-select__select--option">BYR</option>
+              </select>
+            </div>
+            <div class="item__input--box">
+              <input type="text" class="item__input--input input2" value="">
+              <span class="item__input--rate rate-2">innerHtml 1 RUB = 0.0135 USD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
